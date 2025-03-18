@@ -11,4 +11,14 @@
     <ProjectReference Include="..\MetroTicketReservation.Domain\MetroTicketReservation.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Common\Interfaces\Services\" />
+    <Folder Include="Features\Stations\Commands\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" />
+    <PackageReference Include="MediatR" />
+  </ItemGroup>
+
 </Project>

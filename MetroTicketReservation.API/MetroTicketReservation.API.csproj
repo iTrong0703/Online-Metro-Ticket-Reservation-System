@@ -8,16 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore"/>
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MetroTicketReservation.Application\MetroTicketReservation.Application.csproj" />
     <ProjectReference Include="..\MetroTicketReservation.Infrastructure\MetroTicketReservation.Infrastructure.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>

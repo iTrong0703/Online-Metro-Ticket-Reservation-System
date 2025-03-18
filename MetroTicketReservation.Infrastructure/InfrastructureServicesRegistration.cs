@@ -1,5 +1,7 @@
 ﻿using MetroTicketReservation.Application.Common.Interfaces;
+using MetroTicketReservation.Application.Common.Interfaces.Repositories;
 using MetroTicketReservation.Infrastructure.Data;
+using MetroTicketReservation.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,6 +23,9 @@ namespace MetroTicketReservation.Infrastructure
                     configuration.GetConnectionString("DefaultConnection"));
             });
             services.AddScoped<ISeedDataService, SeedDataService>();
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IStationRepository, StationRepository>();
             return services;
         }
     }
