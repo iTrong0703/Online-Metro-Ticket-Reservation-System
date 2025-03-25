@@ -13,11 +13,13 @@
 
   <ItemGroup>
     <Folder Include="Common\Interfaces\Services\" />
-    <Folder Include="Features\Stations\Commands\" />
+    <Folder Include="Features\Stations\Commands\DeleteStation\" />
+    <Folder Include="Features\Stations\Commands\UpdateStation\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" />
+    <PackageReference Include="FluentValidation" />
     <PackageReference Include="MediatR" />
   </ItemGroup>
 
