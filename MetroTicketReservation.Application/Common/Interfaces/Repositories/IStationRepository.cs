@@ -4,5 +4,5 @@ namespace MetroTicketReservation.Application.Common.Interfaces.Repositories;
 
 public interface IStationRepository : IGenericRepository<Station>
 {
-    Task<Station> GetStationsByNameAsync(string name);
+    Task<bool> IsStationUnique(Station station);
 }

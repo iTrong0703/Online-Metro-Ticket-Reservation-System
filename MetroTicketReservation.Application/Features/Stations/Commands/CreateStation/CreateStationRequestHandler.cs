@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
 using MediatR;
 using MetroTicketReservation.Application.Common.Interfaces;
 using MetroTicketReservation.Application.Exceptions;
@@ -13,27 +14,25 @@ namespace MetroTicketReservation.Application.Features.Stations.Commands.CreateSt
     public class CreateStationRequestHandler : IRequestHandler<CreateStationRequest, int>
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IMapper _mapper;
 
-        public CreateStationRequestHandler(IUnitOfWork unitOfWork)
+        public CreateStationRequestHandler(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
+            _mapper = mapper;
         }
 
         public async Task<int> Handle(CreateStationRequest request, CancellationToken cancellationToken)
         {
-            var validator = new CreateStationRequestValidator();
+            var validator = new CreateStationRequestValidator(_mapper, _unitOfWork);
             var validationResult = await validator.ValidateAsync(request);
             if (!validationResult.IsValid)
             {
                 throw new BadRequestException("Something went wrong. ", validationResult.ToDictionary());
             }
-            var station = new Station()
-            {
-                StationName = request.StationName,
-                Description = request.Description
-            };
-            await _unitOfWork.Stations.AddAsync(station);
-            await _unitOfWork.SaveAllAsync();
+            var station = _mapper.Map<Station>(request);
+            await _unitOfWork.Stations.AddAsync(station, cancellationToken);
+            await _unitOfWork.SaveAllAsync(cancellationToken);
             return station.StationID;
         }
     }

@@ -1,5 +1,8 @@
 ﻿using AutoMapper;
+using MetroTicketReservation.Application.Features.Stations.Commands.CreateStation;
+using MetroTicketReservation.Application.Features.Stations.Commands.UpdateStation;
 using MetroTicketReservation.Application.Features.Stations.Queries.GetAllStations;
+using MetroTicketReservation.Application.Features.Stations.Queries.GetStationDetails;
 using MetroTicketReservation.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -13,7 +16,10 @@ namespace MetroTicketReservation.Application.Common.Mappings
     {
         public StationProfile()
         {
-            CreateMap<Station, StationDto>();
+            CreateMap<StationsDto, Station>().ReverseMap(); // both way
+            CreateMap<CreateStationRequest, Station>();
+            CreateMap<UpdateStationRequest, Station>();
+            CreateMap<StationDetailsDto, Station>().ReverseMap();
         }
     }
 }

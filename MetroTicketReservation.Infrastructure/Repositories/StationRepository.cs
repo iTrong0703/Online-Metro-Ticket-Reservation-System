@@ -8,8 +8,8 @@ namespace MetroTicketReservation.Infrastructure.Repositories;
 public class StationRepository : GenericRepository<Station>, IStationRepository
 {
     public StationRepository(AppDbContext context) : base(context) {}
-    public async Task<Station?> GetStationsByNameAsync(string name)
+    public async Task<bool> IsStationUnique(Station station)
     {
-        return await _dbSet.FirstOrDefaultAsync(s => s.StationName == name);
+        return await _dbSet.AnyAsync(s => s.StationName == station.StationName) == false;
     }
 }
