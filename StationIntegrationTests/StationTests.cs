@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace StationIntegrationTests
 {
-    public class ControllerTests : IClassFixture<WebApplicationFactory<Program>>
+    public class StationTests : IClassFixture<WebApplicationFactory<Program>>
     {
         private readonly HttpClient _client;
-        public ControllerTests(WebApplicationFactory<Program> factory)
+        public StationTests(WebApplicationFactory<Program> factory)
         {
             _client = factory.CreateClient();
         }
@@ -19,11 +19,11 @@ namespace StationIntegrationTests
         public async Task Call_CreateStation_Returns_Ok_Async()
         {
             // Arrange
-            var request = new { StationName = "Station test" };
+            var request = new { StationName = new string('T', 55) };
             var content = new StringContent(JsonSerializer.Serialize(request), Encoding.UTF8, "application/json");
 
             // Act
-            var response = await _client.PostAsync("/api/station", content);
+            var response = await _client.PostAsync("/api/stations", content);
 
             // Assert
             response.EnsureSuccessStatusCode();

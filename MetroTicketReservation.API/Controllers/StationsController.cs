@@ -10,11 +10,11 @@ namespace MetroTicketReservation.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class StationController : Controller
+    public class StationsController : Controller
     {
         private readonly IMediator _mediator;
 
-        public StationController(IMediator mediator)
+        public StationsController(IMediator mediator)
         {
             _mediator = mediator;
         }

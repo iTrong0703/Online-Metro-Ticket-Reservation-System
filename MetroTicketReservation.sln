@@ -16,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Packages.props = Directory.Packages.props
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StationIntegrationTests", "StationIntegrationTests\StationIntegrationTests.csproj", "{909F13EB-681E-49EF-9B49-941D93A36A8B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerIntegrationTests", "StationIntegrationTests\ControllerIntegrationTests.csproj", "{909F13EB-681E-49EF-9B49-941D93A36A8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
