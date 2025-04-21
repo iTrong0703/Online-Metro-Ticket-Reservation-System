@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace MetroTicketReservation.Application.Features.Stations.Queries.GetStationDetails
 {
-    class GetStationDetailsRequestHandler : IRequestHandler<GetStationDetailsRequest, StationDetailsDto>
+    public class GetStationDetailsRequestHandler : IRequestHandler<GetStationDetailsRequest, StationDetailsDto>
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;

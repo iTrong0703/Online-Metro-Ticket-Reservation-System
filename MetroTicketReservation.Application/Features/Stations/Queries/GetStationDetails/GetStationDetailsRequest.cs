@@ -7,5 +7,5 @@ using System.Threading.Tasks;
 
 namespace MetroTicketReservation.Application.Features.Stations.Queries.GetStationDetails
 {
-    public record class GetStationDetailsRequest(int stationId) : IRequest<StationDetailsDto>;
+    public record GetStationDetailsRequest(int stationId) : IRequest<StationDetailsDto>;
 }

@@ -26,6 +26,7 @@ namespace MetroTicketReservation.Infrastructure
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IStationRepository, StationRepository>();
+            services.AddScoped<ILineRepository, LineRepository>();
             return services;
         }
     }

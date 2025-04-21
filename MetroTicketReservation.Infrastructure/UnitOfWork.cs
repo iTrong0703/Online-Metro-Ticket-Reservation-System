@@ -10,13 +10,19 @@ public class UnitOfWork : IUnitOfWork
 {
     private readonly AppDbContext _context;
     public IGenericRepository<Station> Stations { get; }
+    public IGenericRepository<Line> Lines{ get; }
     public IStationRepository StationRepository { get; }
 
-    public UnitOfWork(AppDbContext context, IStationRepository stations, IStationRepository stationRepository)
+    public UnitOfWork(
+        AppDbContext context, 
+        IStationRepository stations, IStationRepository stationRepository,
+        ILineRepository lines
+        )
     {
         _context = context;
         Stations = stations;
         StationRepository = stationRepository;
+        Lines = lines;
     }
 
     public Task<int> SaveAllAsync(CancellationToken cancellationToken) => _context.SaveChangesAsync(cancellationToken);

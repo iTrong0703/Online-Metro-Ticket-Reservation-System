@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <Folder Include="Common\Interfaces\Services\" />
+    <Folder Include="Features\Lines\Commands\" />
   </ItemGroup>
 
   <ItemGroup>

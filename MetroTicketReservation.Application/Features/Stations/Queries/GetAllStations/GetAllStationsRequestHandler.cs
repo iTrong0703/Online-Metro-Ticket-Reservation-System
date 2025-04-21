@@ -20,6 +20,6 @@ public class GetAllStationsRequestHandler : IRequestHandler<GetAllStationsReques
     {
         var stations = await _unitOfWork.Stations.GetAllAsync(cancellationToken);
         var result = _mapper.Map<List<StationsDto>>(stations);
-        return _mapper.Map<List<StationsDto>>(stations);
+        return result;
     }
 }
