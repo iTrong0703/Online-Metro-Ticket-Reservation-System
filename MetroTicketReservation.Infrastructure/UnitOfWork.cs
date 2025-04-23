@@ -12,17 +12,19 @@ public class UnitOfWork : IUnitOfWork
     public IGenericRepository<Station> Stations { get; }
     public IGenericRepository<Line> Lines{ get; }
     public IStationRepository StationRepository { get; }
+    public ILineRepository LineRepository { get; }
 
     public UnitOfWork(
         AppDbContext context, 
         IStationRepository stations, IStationRepository stationRepository,
-        ILineRepository lines
+        ILineRepository lines, ILineRepository lineRepository
         )
     {
         _context = context;
         Stations = stations;
         StationRepository = stationRepository;
         Lines = lines;
+        LineRepository = lineRepository;
     }
 
     public Task<int> SaveAllAsync(CancellationToken cancellationToken) => _context.SaveChangesAsync(cancellationToken);

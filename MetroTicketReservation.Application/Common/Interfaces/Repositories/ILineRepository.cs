@@ -9,5 +9,6 @@ namespace MetroTicketReservation.Application.Common.Interfaces.Repositories
 {
     public interface ILineRepository : IGenericRepository<Line>
     {
+        Task<bool> IsLineUnique(Line line);
     }
 }
