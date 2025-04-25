@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace MetroTicketReservation.Application.Common.Interfaces.Repositories
 {
-    public interface ILineRepository : IGenericRepository<Line>
+    public interface IStationLineRepository : IGenericRepository<StationLine>
     {
-        // extend repository
+        Task<IReadOnlyList<StationLine>> GetStationsByLine(int lineId, CancellationToken cancellationToken = default);
     }
 }

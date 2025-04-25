@@ -29,7 +29,8 @@ namespace MetroTicketReservation.Application.Features.Lines.Commands.CreateLine
                 LineName = request.LineName,
                 Description = request.Description
             };
-            return await _unitOfWork.LineRepository.IsLineUnique(line);
+            return !await _unitOfWork.Lines.AnyAsync(
+                l => l.LineName == line.LineName);
         }
     }
 }
