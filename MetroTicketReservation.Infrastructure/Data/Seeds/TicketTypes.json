@@ -1,0 +1,37 @@
+[
+  {
+    "TicketName": "1D",
+    "TicketPrice": 40000,
+    "ValidityDays": 1,
+    "IsStudentOnly": false,
+    "IsTimeBased": true
+  },
+  {
+    "TicketName": "3D",
+    "TicketPrice": 90000,
+    "ValidityDays": 3,
+    "IsStudentOnly": false,
+    "IsTimeBased": true
+  },
+  {
+    "TicketName": "1M",
+    "TicketPrice": 300000,
+    "ValidityDays": 31,
+    "IsStudentOnly": false,
+    "IsTimeBased": true
+  },
+  {
+    "TicketName": "1M-Student",
+    "TicketPrice": 150000,
+    "ValidityDays": 31,
+    "IsStudentOnly": true,
+    "IsTimeBased": true
+  },
+  {
+    "TicketName": "Single",
+    "TicketPrice": -1,
+    "ValidityDays": -1,
+    "IsStudentOnly": false,
+    "IsTimeBased": false
+  }
+]

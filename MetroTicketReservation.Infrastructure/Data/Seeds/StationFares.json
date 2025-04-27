@@ -1,0 +1,1094 @@
+[
+  {
+    "StartStationID": 1,
+    "EndStationID": 2,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 1,
+    "EndStationID": 3,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 1,
+    "EndStationID": 4,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 1,
+    "EndStationID": 5,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 1,
+    "EndStationID": 6,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 1,
+    "EndStationID": 7,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 1,
+    "EndStationID": 8,
+    "TicketTypeID": 5,
+    "Fare": 9000
+  },
+  {
+    "StartStationID": 1,
+    "EndStationID": 9,
+    "TicketTypeID": 5,
+    "Fare": 10000
+  },
+  {
+    "StartStationID": 1,
+    "EndStationID": 10,
+    "TicketTypeID": 5,
+    "Fare": 12000
+  },
+  {
+    "StartStationID": 1,
+    "EndStationID": 11,
+    "TicketTypeID": 5,
+    "Fare": 14000
+  },
+  {
+    "StartStationID": 1,
+    "EndStationID": 12,
+    "TicketTypeID": 5,
+    "Fare": 16000
+  },
+  {
+    "StartStationID": 1,
+    "EndStationID": 13,
+    "TicketTypeID": 5,
+    "Fare": 18000
+  },
+  {
+    "StartStationID": 1,
+    "EndStationID": 14,
+    "TicketTypeID": 5,
+    "Fare": 20000
+  },
+  {
+    "StartStationID": 2,
+    "EndStationID": 1,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 2,
+    "EndStationID": 3,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 2,
+    "EndStationID": 4,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 2,
+    "EndStationID": 5,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 2,
+    "EndStationID": 6,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 2,
+    "EndStationID": 7,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 2,
+    "EndStationID": 8,
+    "TicketTypeID": 5,
+    "Fare": 8000
+  },
+  {
+    "StartStationID": 2,
+    "EndStationID": 9,
+    "TicketTypeID": 5,
+    "Fare": 10000
+  },
+  {
+    "StartStationID": 2,
+    "EndStationID": 10,
+    "TicketTypeID": 5,
+    "Fare": 11000
+  },
+  {
+    "StartStationID": 2,
+    "EndStationID": 11,
+    "TicketTypeID": 5,
+    "Fare": 13000
+  },
+  {
+    "StartStationID": 2,
+    "EndStationID": 12,
+    "TicketTypeID": 5,
+    "Fare": 16000
+  },
+  {
+    "StartStationID": 2,
+    "EndStationID": 13,
+    "TicketTypeID": 5,
+    "Fare": 17000
+  },
+  {
+    "StartStationID": 2,
+    "EndStationID": 14,
+    "TicketTypeID": 5,
+    "Fare": 20000
+  },
+  {
+    "StartStationID": 3,
+    "EndStationID": 1,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 3,
+    "EndStationID": 2,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 3,
+    "EndStationID": 4,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 3,
+    "EndStationID": 5,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 3,
+    "EndStationID": 6,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 3,
+    "EndStationID": 7,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 3,
+    "EndStationID": 8,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 3,
+    "EndStationID": 9,
+    "TicketTypeID": 5,
+    "Fare": 9000
+  },
+  {
+    "StartStationID": 3,
+    "EndStationID": 10,
+    "TicketTypeID": 5,
+    "Fare": 10000
+  },
+  {
+    "StartStationID": 3,
+    "EndStationID": 11,
+    "TicketTypeID": 5,
+    "Fare": 12000
+  },
+  {
+    "StartStationID": 3,
+    "EndStationID": 12,
+    "TicketTypeID": 5,
+    "Fare": 15000
+  },
+  {
+    "StartStationID": 3,
+    "EndStationID": 13,
+    "TicketTypeID": 5,
+    "Fare": 16000
+  },
+  {
+    "StartStationID": 3,
+    "EndStationID": 14,
+    "TicketTypeID": 5,
+    "Fare": 18000
+  },
+  {
+    "StartStationID": 4,
+    "EndStationID": 1,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 4,
+    "EndStationID": 2,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 4,
+    "EndStationID": 3,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 4,
+    "EndStationID": 5,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 4,
+    "EndStationID": 6,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 4,
+    "EndStationID": 7,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 4,
+    "EndStationID": 8,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 4,
+    "EndStationID": 9,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 4,
+    "EndStationID": 10,
+    "TicketTypeID": 5,
+    "Fare": 8000
+  },
+  {
+    "StartStationID": 4,
+    "EndStationID": 11,
+    "TicketTypeID": 5,
+    "Fare": 10000
+  },
+  {
+    "StartStationID": 4,
+    "EndStationID": 12,
+    "TicketTypeID": 5,
+    "Fare": 13000
+  },
+  {
+    "StartStationID": 4,
+    "EndStationID": 13,
+    "TicketTypeID": 5,
+    "Fare": 14000
+  },
+  {
+    "StartStationID": 4,
+    "EndStationID": 14,
+    "TicketTypeID": 5,
+    "Fare": 17000
+  },
+  {
+    "StartStationID": 5,
+    "EndStationID": 1,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 5,
+    "EndStationID": 2,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 5,
+    "EndStationID": 3,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 5,
+    "EndStationID": 4,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 5,
+    "EndStationID": 6,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 5,
+    "EndStationID": 7,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 5,
+    "EndStationID": 8,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 5,
+    "EndStationID": 9,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 5,
+    "EndStationID": 10,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 5,
+    "EndStationID": 11,
+    "TicketTypeID": 5,
+    "Fare": 9000
+  },
+  {
+    "StartStationID": 5,
+    "EndStationID": 12,
+    "TicketTypeID": 5,
+    "Fare": 12000
+  },
+  {
+    "StartStationID": 5,
+    "EndStationID": 13,
+    "TicketTypeID": 5,
+    "Fare": 13000
+  },
+  {
+    "StartStationID": 5,
+    "EndStationID": 14,
+    "TicketTypeID": 5,
+    "Fare": 16000
+  },
+  {
+    "StartStationID": 6,
+    "EndStationID": 1,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 6,
+    "EndStationID": 2,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 6,
+    "EndStationID": 3,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 6,
+    "EndStationID": 4,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 6,
+    "EndStationID": 5,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 6,
+    "EndStationID": 7,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 6,
+    "EndStationID": 8,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 6,
+    "EndStationID": 9,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 6,
+    "EndStationID": 10,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 6,
+    "EndStationID": 11,
+    "TicketTypeID": 5,
+    "Fare": 8000
+  },
+  {
+    "StartStationID": 6,
+    "EndStationID": 12,
+    "TicketTypeID": 5,
+    "Fare": 10000
+  },
+  {
+    "StartStationID": 6,
+    "EndStationID": 13,
+    "TicketTypeID": 5,
+    "Fare": 12000
+  },
+  {
+    "StartStationID": 6,
+    "EndStationID": 14,
+    "TicketTypeID": 5,
+    "Fare": 14000
+  },
+  {
+    "StartStationID": 7,
+    "EndStationID": 1,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 7,
+    "EndStationID": 2,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 7,
+    "EndStationID": 3,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 7,
+    "EndStationID": 4,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 7,
+    "EndStationID": 5,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 7,
+    "EndStationID": 6,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 7,
+    "EndStationID": 8,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 7,
+    "EndStationID": 9,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 7,
+    "EndStationID": 10,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 7,
+    "EndStationID": 11,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 7,
+    "EndStationID": 12,
+    "TicketTypeID": 5,
+    "Fare": 9000
+  },
+  {
+    "StartStationID": 7,
+    "EndStationID": 13,
+    "TicketTypeID": 5,
+    "Fare": 11000
+  },
+  {
+    "StartStationID": 7,
+    "EndStationID": 14,
+    "TicketTypeID": 5,
+    "Fare": 13000
+  },
+  {
+    "StartStationID": 8,
+    "EndStationID": 1,
+    "TicketTypeID": 5,
+    "Fare": 9000
+  },
+  {
+    "StartStationID": 8,
+    "EndStationID": 2,
+    "TicketTypeID": 5,
+    "Fare": 8000
+  },
+  {
+    "StartStationID": 8,
+    "EndStationID": 3,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 8,
+    "EndStationID": 4,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 8,
+    "EndStationID": 5,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 8,
+    "EndStationID": 6,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 8,
+    "EndStationID": 7,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 8,
+    "EndStationID": 9,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 8,
+    "EndStationID": 10,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 8,
+    "EndStationID": 11,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 8,
+    "EndStationID": 12,
+    "TicketTypeID": 5,
+    "Fare": 8000
+  },
+  {
+    "StartStationID": 8,
+    "EndStationID": 13,
+    "TicketTypeID": 5,
+    "Fare": 9000
+  },
+  {
+    "StartStationID": 8,
+    "EndStationID": 14,
+    "TicketTypeID": 5,
+    "Fare": 11000
+  },
+  {
+    "StartStationID": 9,
+    "EndStationID": 1,
+    "TicketTypeID": 5,
+    "Fare": 10000
+  },
+  {
+    "StartStationID": 9,
+    "EndStationID": 2,
+    "TicketTypeID": 5,
+    "Fare": 10000
+  },
+  {
+    "StartStationID": 9,
+    "EndStationID": 3,
+    "TicketTypeID": 5,
+    "Fare": 9000
+  },
+  {
+    "StartStationID": 9,
+    "EndStationID": 4,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 9,
+    "EndStationID": 5,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 9,
+    "EndStationID": 6,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 9,
+    "EndStationID": 7,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 9,
+    "EndStationID": 8,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 9,
+    "EndStationID": 10,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 9,
+    "EndStationID": 11,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 9,
+    "EndStationID": 12,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 9,
+    "EndStationID": 13,
+    "TicketTypeID": 5,
+    "Fare": 8000
+  },
+  {
+    "StartStationID": 9,
+    "EndStationID": 14,
+    "TicketTypeID": 5,
+    "Fare": 10000
+  },
+  {
+    "StartStationID": 10,
+    "EndStationID": 1,
+    "TicketTypeID": 5,
+    "Fare": 12000
+  },
+  {
+    "StartStationID": 10,
+    "EndStationID": 2,
+    "TicketTypeID": 5,
+    "Fare": 11000
+  },
+  {
+    "StartStationID": 10,
+    "EndStationID": 3,
+    "TicketTypeID": 5,
+    "Fare": 10000
+  },
+  {
+    "StartStationID": 10,
+    "EndStationID": 4,
+    "TicketTypeID": 5,
+    "Fare": 8000
+  },
+  {
+    "StartStationID": 10,
+    "EndStationID": 5,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 10,
+    "EndStationID": 6,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 10,
+    "EndStationID": 7,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 10,
+    "EndStationID": 8,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 10,
+    "EndStationID": 9,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 10,
+    "EndStationID": 11,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 10,
+    "EndStationID": 12,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 10,
+    "EndStationID": 13,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 10,
+    "EndStationID": 14,
+    "TicketTypeID": 5,
+    "Fare": 8000
+  },
+  {
+    "StartStationID": 11,
+    "EndStationID": 1,
+    "TicketTypeID": 5,
+    "Fare": 14000
+  },
+  {
+    "StartStationID": 11,
+    "EndStationID": 2,
+    "TicketTypeID": 5,
+    "Fare": 13000
+  },
+  {
+    "StartStationID": 11,
+    "EndStationID": 3,
+    "TicketTypeID": 5,
+    "Fare": 12000
+  },
+  {
+    "StartStationID": 11,
+    "EndStationID": 4,
+    "TicketTypeID": 5,
+    "Fare": 10000
+  },
+  {
+    "StartStationID": 11,
+    "EndStationID": 5,
+    "TicketTypeID": 5,
+    "Fare": 9000
+  },
+  {
+    "StartStationID": 11,
+    "EndStationID": 6,
+    "TicketTypeID": 5,
+    "Fare": 8000
+  },
+  {
+    "StartStationID": 11,
+    "EndStationID": 7,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 11,
+    "EndStationID": 8,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 11,
+    "EndStationID": 9,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 11,
+    "EndStationID": 10,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 11,
+    "EndStationID": 12,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 11,
+    "EndStationID": 13,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 11,
+    "EndStationID": 14,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 12,
+    "EndStationID": 1,
+    "TicketTypeID": 5,
+    "Fare": 16000
+  },
+  {
+    "StartStationID": 12,
+    "EndStationID": 2,
+    "TicketTypeID": 5,
+    "Fare": 16000
+  },
+  {
+    "StartStationID": 12,
+    "EndStationID": 3,
+    "TicketTypeID": 5,
+    "Fare": 15000
+  },
+  {
+    "StartStationID": 12,
+    "EndStationID": 4,
+    "TicketTypeID": 5,
+    "Fare": 13000
+  },
+  {
+    "StartStationID": 12,
+    "EndStationID": 5,
+    "TicketTypeID": 5,
+    "Fare": 12000
+  },
+  {
+    "StartStationID": 12,
+    "EndStationID": 6,
+    "TicketTypeID": 5,
+    "Fare": 10000
+  },
+  {
+    "StartStationID": 12,
+    "EndStationID": 7,
+    "TicketTypeID": 5,
+    "Fare": 9000
+  },
+  {
+    "StartStationID": 12,
+    "EndStationID": 8,
+    "TicketTypeID": 5,
+    "Fare": 8000
+  },
+  {
+    "StartStationID": 12,
+    "EndStationID": 9,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 12,
+    "EndStationID": 10,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 12,
+    "EndStationID": 11,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 12,
+    "EndStationID": 13,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 12,
+    "EndStationID": 14,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 13,
+    "EndStationID": 1,
+    "TicketTypeID": 5,
+    "Fare": 18000
+  },
+  {
+    "StartStationID": 13,
+    "EndStationID": 2,
+    "TicketTypeID": 5,
+    "Fare": 17000
+  },
+  {
+    "StartStationID": 13,
+    "EndStationID": 3,
+    "TicketTypeID": 5,
+    "Fare": 16000
+  },
+  {
+    "StartStationID": 13,
+    "EndStationID": 4,
+    "TicketTypeID": 5,
+    "Fare": 14000
+  },
+  {
+    "StartStationID": 13,
+    "EndStationID": 5,
+    "TicketTypeID": 5,
+    "Fare": 13000
+  },
+  {
+    "StartStationID": 13,
+    "EndStationID": 6,
+    "TicketTypeID": 5,
+    "Fare": 12000
+  },
+  {
+    "StartStationID": 13,
+    "EndStationID": 7,
+    "TicketTypeID": 5,
+    "Fare": 11000
+  },
+  {
+    "StartStationID": 13,
+    "EndStationID": 8,
+    "TicketTypeID": 5,
+    "Fare": 9000
+  },
+  {
+    "StartStationID": 13,
+    "EndStationID": 9,
+    "TicketTypeID": 5,
+    "Fare": 8000
+  },
+  {
+    "StartStationID": 13,
+    "EndStationID": 10,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 13,
+    "EndStationID": 11,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 13,
+    "EndStationID": 12,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 13,
+    "EndStationID": 14,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 14,
+    "EndStationID": 1,
+    "TicketTypeID": 5,
+    "Fare": 20000
+  },
+  {
+    "StartStationID": 14,
+    "EndStationID": 2,
+    "TicketTypeID": 5,
+    "Fare": 20000
+  },
+  {
+    "StartStationID": 14,
+    "EndStationID": 3,
+    "TicketTypeID": 5,
+    "Fare": 18000
+  },
+  {
+    "StartStationID": 14,
+    "EndStationID": 4,
+    "TicketTypeID": 5,
+    "Fare": 17000
+  },
+  {
+    "StartStationID": 14,
+    "EndStationID": 5,
+    "TicketTypeID": 5,
+    "Fare": 16000
+  },
+  {
+    "StartStationID": 14,
+    "EndStationID": 6,
+    "TicketTypeID": 5,
+    "Fare": 14000
+  },
+  {
+    "StartStationID": 14,
+    "EndStationID": 7,
+    "TicketTypeID": 5,
+    "Fare": 13000
+  },
+  {
+    "StartStationID": 14,
+    "EndStationID": 8,
+    "TicketTypeID": 5,
+    "Fare": 11000
+  },
+  {
+    "StartStationID": 14,
+    "EndStationID": 9,
+    "TicketTypeID": 5,
+    "Fare": 10000
+  },
+  {
+    "StartStationID": 14,
+    "EndStationID": 10,
+    "TicketTypeID": 5,
+    "Fare": 8000
+  },
+  {
+    "StartStationID": 14,
+    "EndStationID": 11,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 14,
+    "EndStationID": 12,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  },
+  {
+    "StartStationID": 14,
+    "EndStationID": 13,
+    "TicketTypeID": 5,
+    "Fare": 7000
+  }
+]

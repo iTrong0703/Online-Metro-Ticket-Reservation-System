@@ -8,7 +8,7 @@ namespace MetroTicketReservation.Domain.Entities
 {
     public class Line
     {
-        public int LineID { get; set; } // PK
+        public int LineID { get; set; }
         public string LineName { get; set; } = string.Empty;
         public string? Description { get; set; }
 

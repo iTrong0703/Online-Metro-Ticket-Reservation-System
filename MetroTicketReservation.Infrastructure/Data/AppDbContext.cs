@@ -13,6 +13,8 @@ namespace MetroTicketReservation.Infrastructure.Data
         public DbSet<Station> Stations { get; set; }
         public DbSet<Line> Lines { get; set; }
         public DbSet<StationLine> StationLines { get; set; }
+        public DbSet<StationFare> StationFares { get; set; }
+        public DbSet<TicketType> TicketTypes { get; set; }
         public AppDbContext(DbContextOptions<AppDbContext> dbContextOptions) : base(dbContextOptions) {}
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -41,6 +43,30 @@ namespace MetroTicketReservation.Infrastructure.Data
                 .HasForeignKey(sl => sl.LineID);
             modelBuilder.Entity<StationLine>()
                 .HasIndex(sl => new { sl.StationID, sl.LineID });
+
+            // StationFare
+            modelBuilder.Entity<StationFare>()
+                .Property(s => s.StationFareID)
+                .UseIdentityColumn();
+            modelBuilder.Entity<StationFare>()
+                .HasOne(s => s.StartStation)
+                .WithMany()
+                .HasForeignKey(s => s.StartStationID)
+                .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<StationFare>()
+                .HasOne(s => s.EndStation)
+                .WithMany()
+                .HasForeignKey(s => s.EndStationID)
+                .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<StationFare>()
+                .HasOne(t => t.TicketType)
+                .WithMany()
+                .HasForeignKey(t => t.TicketTypeID)
+                .OnDelete(DeleteBehavior.Restrict);
+            // TicketType
+            modelBuilder.Entity<TicketType>()
+                .Property(t => t.TicketTypeID)
+                .UseIdentityColumn();
 
         }
     }
