@@ -28,6 +28,8 @@ namespace MetroTicketReservation.Infrastructure
             services.AddScoped<IStationRepository, StationRepository>();
             services.AddScoped<ILineRepository, LineRepository>();
             services.AddScoped<IStationLineRepository, StationLineRepository>();
+            services.AddScoped<ITicketTypeRepository, TicketTypeRepository>();
+            services.AddScoped<IStationFareRepository, StationFareRepository>();
             return services;
         }
     }

@@ -8,9 +8,13 @@ public interface IUnitOfWork : IDisposable
 {
     IGenericRepository<Station> Stations { get; }
     IGenericRepository<Line> Lines { get; }
+    IGenericRepository<TicketType> TicketTypes { get; }
     IGenericRepository<StationLine> StationLines { get; }
+    IGenericRepository<StationFare> StationFares { get; }
     IStationRepository StationRepository { get;  }
     ILineRepository LineRepository { get;  }
     IStationLineRepository StationLineRepository { get;  }
+    ITicketTypeRepository TicketTypeRepository { get;  }
+    IStationFareRepository StationFareRepository { get; }
     Task<int> SaveAllAsync(CancellationToken cancellationToken = default);
 }
