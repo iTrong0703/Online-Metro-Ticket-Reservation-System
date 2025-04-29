@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MetroTicketReservation.Application.Features.TicketType.Queries.GetTicketTypeDetails
+namespace MetroTicketReservation.Application.Features.TicketTypes.Commands.SharedResources
 {
-    public class TicketTypeDetailsDto
+    public class BaseTicketTypeRequest
     {
-        public string TicketName { get; set; }
+        public string TicketName { get; set; } = string.Empty;
         public int TicketPrice { get; set; }
         public int ValidityDays { get; set; }
         public bool IsStudentOnly { get; set; }

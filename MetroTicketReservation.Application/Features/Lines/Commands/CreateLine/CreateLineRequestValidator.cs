@@ -19,7 +19,7 @@ namespace MetroTicketReservation.Application.Features.Lines.Commands.CreateLine
             _unitOfWork = unitOfWork;
             Include(new BaseLineRequestValidator());
             RuleFor(t => t)
-                .MustAsync(CheckLineUnique).WithMessage("Line is already exits.");
+                .MustAsync(CheckLineUnique).WithMessage("Line name is already exits.");
         }
 
         private async Task<bool> CheckLineUnique(CreateLineRequest request, CancellationToken token)

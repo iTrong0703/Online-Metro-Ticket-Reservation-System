@@ -23,5 +23,12 @@ namespace MetroTicketReservation.Infrastructure.Repositories
                             .Include(s => s.EndStation)
                             .ToListAsync();
         }
+
+        public async Task<StationFare> GetStationFareById(int startId, int endId, CancellationToken cancellationToken)
+        {
+            return await _dbSet.Include(s => s.StartStation)
+                            .Include(s => s.EndStation)
+                            .FirstOrDefaultAsync(s => s.StartStationID == startId && s.EndStationID == endId);
+        }
     }
 }

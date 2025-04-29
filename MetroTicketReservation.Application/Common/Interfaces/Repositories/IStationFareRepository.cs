@@ -10,5 +10,6 @@ namespace MetroTicketReservation.Application.Common.Interfaces.Repositories
     public interface IStationFareRepository : IGenericRepository<StationFare>
     {
         Task<IReadOnlyList<StationFare>> GetAllStationFares(CancellationToken cancellationToken = default);
+        Task<StationFare> GetStationFareById(int startId, int endId, CancellationToken cancellationToken = default);
     }
 }

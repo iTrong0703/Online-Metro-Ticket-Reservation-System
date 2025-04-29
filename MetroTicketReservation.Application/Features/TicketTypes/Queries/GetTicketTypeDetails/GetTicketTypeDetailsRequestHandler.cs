@@ -1,7 +1,6 @@
 ﻿using MediatR;
 using MetroTicketReservation.Application.Common.Interfaces;
 using MetroTicketReservation.Application.Exceptions;
-using MetroTicketReservation.Application.Features.TicketType.Queries.GetAllTicketTypes;
 using MetroTicketReservation.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -9,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MetroTicketReservation.Application.Features.TicketType.Queries.GetTicketTypeDetails
+namespace MetroTicketReservation.Application.Features.TicketTypes.Queries.GetTicketTypeDetails
 {
     public class GetTicketTypeDetailsRequestHandler : IRequestHandler<GetTicketTypeDetailsRequest, TicketTypeDetailsDto>
     {

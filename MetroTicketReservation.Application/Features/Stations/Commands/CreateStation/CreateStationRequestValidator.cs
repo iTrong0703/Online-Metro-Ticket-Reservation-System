@@ -18,7 +18,7 @@ public class CreateStationRequestValidator : AbstractValidator<CreateStationRequ
         Include(new BaseStationRequestValidator()); // AbstractValidator là abstract class nên chỉ implement đc 1, nên muốn thêm thì dùng Include
 
         RuleFor(t => t)
-            .MustAsync(CheckStationUnique).WithMessage("Station is already exits.");
+            .MustAsync(CheckStationUnique).WithMessage("Station name is already exits.");
     }
 
     private async Task<bool> CheckStationUnique(CreateStationRequest request, CancellationToken token)

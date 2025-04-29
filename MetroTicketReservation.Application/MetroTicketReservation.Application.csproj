@@ -13,9 +13,6 @@
 
   <ItemGroup>
     <Folder Include="Common\Interfaces\Services\" />
-    <Folder Include="Features\StationFares\Commands\" />
-    <Folder Include="Features\StationFares\Queries\GetStationFareDetails\" />
-    <Folder Include="Features\TicketType\Commands\" />
   </ItemGroup>
 
   <ItemGroup>
