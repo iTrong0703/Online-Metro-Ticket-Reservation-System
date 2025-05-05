@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using MetroTicketReservation.Application.Common.Interfaces;
+using MetroTicketReservation.Application.Common.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MetroTicketReservation.Application.Features.Lines.Queries.GetAllLines
 {
-    public class GetAllLinesRequestHandler : IRequestHandler<GetAllLinesRequest, List<LinesDto>>
+    public class GetAllLinesRequestHandler : IRequestHandler<GetAllLinesRequest, PagedResult<LinesDto>>
     {
         private readonly IUnitOfWork _unitOfWork;
 
@@ -16,15 +17,20 @@ namespace MetroTicketReservation.Application.Features.Lines.Queries.GetAllLines
         {
             _unitOfWork = unitOfWork;
         }
-        public async Task<List<LinesDto>> Handle(GetAllLinesRequest request, CancellationToken cancellationToken)
+        public async Task<PagedResult<LinesDto>> Handle(GetAllLinesRequest request, CancellationToken cancellationToken)
         {
-            var lines = await _unitOfWork.Lines.GetAllAsync(cancellationToken);
-            var result = lines.Select(line => new LinesDto
+            var lines = await _unitOfWork.LineRepository.GetLinePagedAsync(request.PageNumber, request.PageSize, cancellationToken);
+            var result = new PagedResult<LinesDto>
             {
-                LineName = line.LineName,
-                Description = line.Description
-            }).ToList();
+                Items = lines.Items.Select(line => new LinesDto
+                {
+                    LineName = line.LineName,
+                    Description = line.Description
+                }).ToList(),
+                TotalCount = lines.TotalCount
+            };
             return result;
         }
+
     }
 }

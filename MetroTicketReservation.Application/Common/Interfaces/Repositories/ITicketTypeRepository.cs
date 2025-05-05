@@ -1,4 +1,5 @@
-﻿using MetroTicketReservation.Domain.Entities;
+﻿using MetroTicketReservation.Application.Common.Models;
+using MetroTicketReservation.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,6 @@ namespace MetroTicketReservation.Application.Common.Interfaces.Repositories
 {
     public interface ITicketTypeRepository : IGenericRepository<TicketType>
     {
+        Task<PagedResult<TicketType>> GetTicketTypePagedAsync(int pageNumber, int pageSize, CancellationToken cancellationToken);
     }
 }

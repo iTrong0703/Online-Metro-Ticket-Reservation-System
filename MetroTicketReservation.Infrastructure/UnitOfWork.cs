@@ -37,6 +37,7 @@ public class UnitOfWork : IUnitOfWork
         StationLines = stationLine;
         StationLineRepository = stationLine;
         TicketTypes = ticketType;
+        TicketTypeRepository = ticketType;
         StationFares = stationFare;
         StationFareRepository = stationFare;
     }

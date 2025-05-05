@@ -15,10 +15,10 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
         _context = context;
         _dbSet = _context.Set<T>();
     }
-    public async Task<IReadOnlyList<T>> GetAllAsync(CancellationToken cancellationToken = default)
-    {
-        return await _dbSet.ToListAsync(cancellationToken);
-    }
+    //public async Task<IReadOnlyList<T>> GetAllAsync(CancellationToken cancellationToken = default)
+    //{
+    //    return await _dbSet.ToListAsync(cancellationToken);
+    //}
 
     public async Task<T> GetByIdAsync(int id, CancellationToken cancellationToken = default)
     {

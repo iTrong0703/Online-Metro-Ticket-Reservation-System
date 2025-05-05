@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using MetroTicketReservation.Application.Common.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,5 +8,5 @@ using System.Threading.Tasks;
 
 namespace MetroTicketReservation.Application.Features.Lines.Queries.GetAllLines
 {
-    public record GetAllLinesRequest : IRequest<List<LinesDto>>;
+    public class GetAllLinesRequest : PagedRequest, IRequest<PagedResult<LinesDto>> { }
 }

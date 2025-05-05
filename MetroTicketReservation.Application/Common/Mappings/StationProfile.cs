@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using MetroTicketReservation.Application.Common.Models;
 using MetroTicketReservation.Application.Features.Stations.Commands.CreateStation;
 using MetroTicketReservation.Application.Features.Stations.Commands.UpdateStation;
 using MetroTicketReservation.Application.Features.Stations.Queries.GetAllStations;
@@ -20,6 +21,9 @@ namespace MetroTicketReservation.Application.Common.Mappings
             CreateMap<CreateStationRequest, Station>();
             CreateMap<UpdateStationRequest, Station>();
             CreateMap<StationDetailsDto, Station>().ReverseMap();
+
+            // map cho class có <T>
+            CreateMap(typeof(PagedResult<>), typeof(PagedResult<>));
         }
     }
 }

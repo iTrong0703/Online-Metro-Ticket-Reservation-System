@@ -26,9 +26,9 @@ namespace MetroTicketReservation.API.Controllers
         }
         // GET
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get([FromQuery] GetAllLinesRequest request)
         {
-            var result = await _mediator.Send(new GetAllLinesRequest());
+            var result = await _mediator.Send(request);
             return Ok(result);
         }
         [HttpGet("{id}")]

@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using MetroTicketReservation.Application.Common.Interfaces;
+using MetroTicketReservation.Application.Common.Models;
 using MetroTicketReservation.Application.Exceptions;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace MetroTicketReservation.Application.Features.StationFares.Queries.GetAllStationFares
 {
-    public class GetAllStationFaresRequestHandler : IRequestHandler<GetAllStationFaresRequest, List<StationFaresDto>>
+    public class GetAllStationFaresRequestHandler : IRequestHandler<GetAllStationFaresRequest, PagedResult<StationFaresDto>>
     {
         private readonly IUnitOfWork _unitOfWork;
 
@@ -17,15 +18,19 @@ namespace MetroTicketReservation.Application.Features.StationFares.Queries.GetAl
         {
             _unitOfWork = unitOfWork;
         }
-        public async Task<List<StationFaresDto>> Handle(GetAllStationFaresRequest request, CancellationToken cancellationToken)
+        public async Task<PagedResult<StationFaresDto>> Handle(GetAllStationFaresRequest request, CancellationToken cancellationToken)
         {
-            var stationFares = await _unitOfWork.StationFareRepository.GetAllStationFares();
-            var result = stationFares.Select(s => new StationFaresDto
+            var stationFares = await _unitOfWork.StationFareRepository.GetStationFarePagedAsync(request.PageNumber, request.PageSize, cancellationToken);
+            var result = new PagedResult<StationFaresDto>
             {
-                StartStationName = s.StartStation.StationName,
-                EndStationName = s.EndStation.StationName,
-                Fare = s.Fare
-            }).ToList();
+                Items = stationFares.Items.Select(s => new StationFaresDto
+                {
+                    StartStationName = s.StartStation.StationName,
+                    EndStationName = s.EndStation.StationName,
+                    Fare = s.Fare
+                }).ToList(),
+                TotalCount = stationFares.TotalCount
+            };
             return result;
         }
     }

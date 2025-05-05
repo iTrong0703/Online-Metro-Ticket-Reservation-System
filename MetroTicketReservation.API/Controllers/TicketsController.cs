@@ -29,9 +29,9 @@ namespace MetroTicketReservation.API.Controllers
         /// ticket-types
         // GET
         [HttpGet("ticket-types")]
-        public async Task<IActionResult> GetAllTicketTypes()
+        public async Task<IActionResult> GetAllTicketTypes([FromQuery] GetAllTicketTypesRequest request)
         {
-            var result = await _mediator.Send(new GetAllTicketTypesRequest());
+            var result = await _mediator.Send(request);
             return Ok(result);
         }
         [HttpGet("ticket-types/{id}")]
@@ -65,9 +65,9 @@ namespace MetroTicketReservation.API.Controllers
         /// station-fares
         // GET
         [HttpGet("station-fares")]
-        public async Task<IActionResult> GetAllStationFare()
+        public async Task<IActionResult> GetAllStationFare([FromQuery] GetAllStationFaresRequest request)
         {
-            var result = await _mediator.Send(new GetAllStationFaresRequest());
+            var result = await _mediator.Send(request);
             return Ok(result);
         }
         [HttpGet("station-fares/detail")]

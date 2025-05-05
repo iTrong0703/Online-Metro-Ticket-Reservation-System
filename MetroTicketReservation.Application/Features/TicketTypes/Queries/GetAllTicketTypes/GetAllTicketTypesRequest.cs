@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using MetroTicketReservation.Application.Common.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,5 +8,5 @@ using System.Threading.Tasks;
 
 namespace MetroTicketReservation.Application.Features.TicketTypes.Queries.GetAllTicketTypes
 {
-    public record GetAllTicketTypesRequest : IRequest<List<TicketTypeDto>>;
+    public class GetAllTicketTypesRequest : PagedRequest, IRequest<PagedResult<TicketTypeDto>> { }
 }
