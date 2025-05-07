@@ -14,11 +14,13 @@ public class UnitOfWork : IUnitOfWork
     public IGenericRepository<TicketType> TicketTypes { get; }
     public IGenericRepository<StationFare> StationFares { get; }
     public IGenericRepository<StationLine> StationLines { get; }
+    public IGenericRepository<Device> Devices { get; }
     public IStationRepository StationRepository { get; }
     public ILineRepository LineRepository { get; }
     public IStationLineRepository StationLineRepository { get; }
     public ITicketTypeRepository TicketTypeRepository { get; }
     public IStationFareRepository StationFareRepository { get; }
+    public IDeviceRepository DeviceRepository { get;  }
 
     public UnitOfWork(
         AppDbContext context, 
@@ -26,7 +28,8 @@ public class UnitOfWork : IUnitOfWork
         ILineRepository lines,
         IStationLineRepository stationLine,
         ITicketTypeRepository ticketType,
-        IStationFareRepository stationFare
+        IStationFareRepository stationFare,
+        IDeviceRepository device
         )
     {
         _context = context;
@@ -40,6 +43,9 @@ public class UnitOfWork : IUnitOfWork
         TicketTypeRepository = ticketType;
         StationFares = stationFare;
         StationFareRepository = stationFare;
+        Devices = device;
+        DeviceRepository = device;
+         
     }
 
     public Task<int> SaveAllAsync(CancellationToken cancellationToken) => _context.SaveChangesAsync(cancellationToken);

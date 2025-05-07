@@ -30,6 +30,7 @@ namespace MetroTicketReservation.Infrastructure
             services.AddScoped<IStationLineRepository, StationLineRepository>();
             services.AddScoped<ITicketTypeRepository, TicketTypeRepository>();
             services.AddScoped<IStationFareRepository, StationFareRepository>();
+            services.AddScoped<IDeviceRepository, DeviceRepository>();
             return services;
         }
     }
