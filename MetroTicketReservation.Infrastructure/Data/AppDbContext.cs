@@ -15,6 +15,10 @@ namespace MetroTicketReservation.Infrastructure.Data
         public DbSet<StationLine> StationLines { get; set; }
         public DbSet<StationFare> StationFares { get; set; }
         public DbSet<TicketType> TicketTypes { get; set; }
+        public DbSet<Passenger> Passengers { get; set; }
+        public DbSet<Ticket> Tickets { get; set; }
+        public DbSet<TicketUsage> TicketUsages { get; set; }
+        public DbSet<Device> Devices { get; set; }
         public AppDbContext(DbContextOptions<AppDbContext> dbContextOptions) : base(dbContextOptions) {}
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -35,11 +39,11 @@ namespace MetroTicketReservation.Infrastructure.Data
                 .HasKey(sl => new {  sl.StationID, sl.LineID });
             modelBuilder.Entity<StationLine>()
                 .HasOne(sl => sl.Station)
-                .WithMany(sl => sl.StationLines)
+                .WithMany(s => s.StationLines)
                 .HasForeignKey(sl => sl.StationID);
             modelBuilder.Entity<StationLine>()
                 .HasOne(sl => sl.Line)
-                .WithMany(sl => sl.StationLines)
+                .WithMany(l => l.StationLines)
                 .HasForeignKey(sl => sl.LineID);
             modelBuilder.Entity<StationLine>()
                 .HasIndex(sl => new { sl.StationID, sl.LineID });
@@ -68,6 +72,63 @@ namespace MetroTicketReservation.Infrastructure.Data
                 .Property(t => t.TicketTypeID)
                 .UseIdentityColumn();
 
+            // Passenger
+            modelBuilder.Entity<Passenger>()
+                .HasIndex(p => p.GoogleId)
+                .IsUnique();
+
+            modelBuilder.Entity<Passenger>()
+                .HasIndex(p => p.Email)
+                .IsUnique();
+
+            // Ticket
+            modelBuilder.Entity<Ticket>()
+               .HasOne(t => t.Passenger)
+               .WithMany(p => p.Tickets)
+               .HasForeignKey(t => t.PassengerID)
+               .OnDelete(DeleteBehavior.SetNull);
+            modelBuilder.Entity<Ticket>()
+                .HasOne(t => t.TicketType)
+                .WithMany()
+                .HasForeignKey(t => t.TicketTypeID);
+            modelBuilder.Entity<Ticket>()
+                .HasOne(t => t.StartStation)
+                .WithMany()
+                .HasForeignKey(t => t.StartStationID)
+                .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<Ticket>()
+                .HasOne(t => t.EndStation)
+                .WithMany()
+                .HasForeignKey(t => t.EndStationID)
+                .OnDelete(DeleteBehavior.Restrict);
+
+
+            // TicketUsage
+            modelBuilder.Entity<TicketUsage>()
+                .HasOne(tu => tu.Ticket)
+                .WithMany(t => t.Usages)
+                .HasForeignKey(tu => tu.TicketID)
+                .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<TicketUsage>()
+                .HasOne(tu => tu.Station)
+                .WithMany()
+                .HasForeignKey(tu => tu.StationID)
+                .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<TicketUsage>()
+                .HasOne(tu => tu.Device)
+                .WithMany(d => d.TicketUsages)
+                .HasForeignKey(tu => tu.DeviceID)
+                .OnDelete(DeleteBehavior.SetNull);
+
+            // Device
+            modelBuilder.Entity<Device>()
+                .Property(d => d.DeviceID)
+                .UseIdentityColumn();
+            modelBuilder.Entity<Device>()
+                .HasOne(d => d.Station)
+                .WithMany()
+                .HasForeignKey(d => d.StationID)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }
