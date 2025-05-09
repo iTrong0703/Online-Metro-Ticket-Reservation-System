@@ -4,12 +4,14 @@ using MetroTicketReservation.Application.Features.Stations.Commands.DeleteStatio
 using MetroTicketReservation.Application.Features.Stations.Commands.UpdateStation;
 using MetroTicketReservation.Application.Features.Stations.Queries.GetAllStations;
 using MetroTicketReservation.Application.Features.Stations.Queries.GetStationDetails;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MetroTicketReservation.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class StationsController : Controller
     {
         private readonly IMediator _mediator;

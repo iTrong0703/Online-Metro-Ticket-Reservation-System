@@ -2,6 +2,9 @@ using MetroTicketReservation.Application.Common.Interfaces;
 using MetroTicketReservation.Infrastructure;
 using MetroTicketReservation.Application;
 using MetroTicketReservation.API.Middlewares;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Google;
+using MetroTicketReservation.Application.Common.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +18,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddApplication()
     .AddInfrastructure(builder.Configuration);
+
+
+
 
 
 

@@ -15,12 +15,14 @@ public class UnitOfWork : IUnitOfWork
     public IGenericRepository<StationFare> StationFares { get; }
     public IGenericRepository<StationLine> StationLines { get; }
     public IGenericRepository<Device> Devices { get; }
+    public IGenericRepository<Passenger> Passengers { get; }
     public IStationRepository StationRepository { get; }
     public ILineRepository LineRepository { get; }
     public IStationLineRepository StationLineRepository { get; }
     public ITicketTypeRepository TicketTypeRepository { get; }
     public IStationFareRepository StationFareRepository { get; }
     public IDeviceRepository DeviceRepository { get;  }
+    public IPassengerRepository PassengerRepository { get;  }
 
     public UnitOfWork(
         AppDbContext context, 
@@ -29,7 +31,8 @@ public class UnitOfWork : IUnitOfWork
         IStationLineRepository stationLine,
         ITicketTypeRepository ticketType,
         IStationFareRepository stationFare,
-        IDeviceRepository device
+        IDeviceRepository device,
+        IPassengerRepository passenger
         )
     {
         _context = context;
@@ -45,6 +48,8 @@ public class UnitOfWork : IUnitOfWork
         StationFareRepository = stationFare;
         Devices = device;
         DeviceRepository = device;
+        Passengers = passenger;
+        PassengerRepository = passenger;
          
     }
 

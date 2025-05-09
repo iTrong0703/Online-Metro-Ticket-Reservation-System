@@ -12,14 +12,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Common\Interfaces\Services\" />
     <Folder Include="Features\Devices\Commands\DeleteDevice\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" />
     <PackageReference Include="FluentValidation" />
+    <PackageReference Include="Google.Apis.Auth" />
     <PackageReference Include="MediatR" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" />
   </ItemGroup>
 
 </Project>

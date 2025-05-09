@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MediatR;
 
 namespace MetroTicketReservation.Application.Features.Passengers.Commands.LoginWithGoogle
 {
-    class LoginWithGoogleRequest
+    public class LoginWithGoogleRequest : IRequest<LoginWithGoogleResponse>
     {
+        public string IdToken { get; set; } = string.Empty;
     }
 }

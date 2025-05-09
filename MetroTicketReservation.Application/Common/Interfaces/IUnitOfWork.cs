@@ -12,11 +12,14 @@ public interface IUnitOfWork : IDisposable
     IGenericRepository<StationLine> StationLines { get; }
     IGenericRepository<StationFare> StationFares { get; }
     IGenericRepository<Device> Devices { get; }
+    IGenericRepository<Passenger> Passengers { get; }
     IStationRepository StationRepository { get;  }
     ILineRepository LineRepository { get;  }
     IStationLineRepository StationLineRepository { get;  }
     ITicketTypeRepository TicketTypeRepository { get;  }
     IStationFareRepository StationFareRepository { get; }
     IDeviceRepository DeviceRepository { get; }
+    IPassengerRepository PassengerRepository { get; }
+    
     Task<int> SaveAllAsync(CancellationToken cancellationToken = default);
 }
