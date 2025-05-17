@@ -6,7 +6,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace StationIntegrationTests
+namespace ControllerIntegrationTests
 {
     public class StationTests : IClassFixture<WebApplicationFactory<Program>>
     {

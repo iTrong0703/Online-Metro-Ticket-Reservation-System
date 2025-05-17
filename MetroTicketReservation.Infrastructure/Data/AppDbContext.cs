@@ -1,5 +1,6 @@
 ﻿using MetroTicketReservation.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,8 @@ namespace MetroTicketReservation.Infrastructure.Data
         public DbSet<Ticket> Tickets { get; set; }
         public DbSet<TicketUsage> TicketUsages { get; set; }
         public DbSet<Device> Devices { get; set; }
+        public DbSet<Domain.Entities.Payment> Payments { get; set; }
+
         public AppDbContext(DbContextOptions<AppDbContext> dbContextOptions) : base(dbContextOptions) {}
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -129,6 +132,31 @@ namespace MetroTicketReservation.Infrastructure.Data
                 .WithMany()
                 .HasForeignKey(d => d.StationID)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            // Payment
+            modelBuilder.Entity<Domain.Entities.Payment>(entity =>
+            {
+                entity.HasKey(p => p.PaymentId);
+                entity.Property(p => p.PaymentId).UseIdentityColumn();
+
+                entity.HasIndex(p => p.OrderId)
+                        .IsUnique();
+
+                entity.Property(p => p.PaymentStatus).HasConversion<string>().IsRequired();
+
+                entity.HasOne(p => p.Passenger)
+                    .WithMany()
+                    .HasForeignKey(p => p.PassengerId)
+                    .OnDelete(DeleteBehavior.Restrict)
+                    .IsRequired(false);
+
+                entity.HasOne(p => p.Ticket)
+                    .WithMany()
+                    .HasForeignKey(p => p.TicketId)
+                    .OnDelete(DeleteBehavior.Restrict)
+                    .IsRequired(false);
+            });
+
         }
     }
 }

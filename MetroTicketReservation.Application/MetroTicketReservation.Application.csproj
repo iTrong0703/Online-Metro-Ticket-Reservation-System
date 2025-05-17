@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <Folder Include="Features\Devices\Commands\DeleteDevice\" />
+    <Folder Include="Features\Payments\Commands\UpdatePayment\" />
   </ItemGroup>
 
   <ItemGroup>
