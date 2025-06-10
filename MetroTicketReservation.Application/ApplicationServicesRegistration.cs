@@ -1,11 +1,5 @@
-﻿using MetroTicketReservation.Application.Common.Interfaces;
-using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MetroTicketReservation.Application
 {
